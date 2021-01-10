@@ -30,7 +30,7 @@ One approach to retrieving this information is to use a **for loop**, a common p
 
 - Next, we use control flow to assess each parameter of our desired output. First, we check that the current row is equal to the stock we are assessing. If it is not, the for loop passes and checks the next row. If it is, it adds the current row's (or the current day's) traded volume to the `tickerVolumes` array for the given index. If we are looping through index `0`, then we expect that every row with the value in Column A that is `"AY"` (from the `tickers` array) to be looped through and each volume added to the `tickerVolumes` array. 
 
-[Control flow image](Resources/control_flow.png)
+![Control flow image](Resources/control_flow.png)
 
 - Following this, we want to identify the starting and ending prices for the given stock in order to calculate performance. To do this, we opt to **divide the ending price, or the price the stock had on the last day it was traded in a year, by the starting price (the price on the first day of the year)**. 
 
@@ -38,7 +38,7 @@ One approach to retrieving this information is to use a **for loop**, a common p
 
 6. Finally, within the outer loop, we report each ticker (based off its index) in sequence. The output is then formatted accordingly, coloring stocks that performed positively in green and negatively in red, as well as some borders and bold face text to enhance readability
 
-[Formatting example](Resources/formatting.png)
+![Formatting example](Resources/formatting.png)
 
 
 ## Summary
@@ -61,9 +61,9 @@ Our refactored VBA script involved the creation of a harmonized set of arrays an
 
 The net result is the resulting performance timers, improved by approximately 12% from my original code (0.56s to 0.5s for both datasets)
 
-[2017 script performance](Resources/VBA_Challenge_2017.png)
+![2017 script performance](Resources/VBA_Challenge_2017.png)
 
-[2018 script performance](Resources/VBA_Challenge_2018.png)
+![2018 script performance](Resources/VBA_Challenge_2018.png)
 
 
 
